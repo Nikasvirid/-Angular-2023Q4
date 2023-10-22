@@ -1,4 +1,4 @@
-import { IItem } from "./search-item.model";
+import { IItem } from "../search-item/search-item.model";
 
 export interface IResponse {
     kind: string;
