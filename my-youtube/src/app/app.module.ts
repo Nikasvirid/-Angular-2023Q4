@@ -8,6 +8,7 @@ import { SearchItemComponent } from './search/search-item/search-item.component'
 import { HeaderComponent } from './header/header/header.component';
 import { FiltersComponent } from './header/filters/filters.component';
 import { AuthorizationComponent } from './header/authorization/authorization.component';
+import { SortingComponent } from './sorting/sorting/sorting.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { AuthorizationComponent } from './header/authorization/authorization.com
     HeaderComponent,
     FiltersComponent,
     AuthorizationComponent,
+    SortingComponent,
   ],
   imports: [
     BrowserModule,
