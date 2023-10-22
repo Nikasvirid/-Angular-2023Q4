@@ -7,9 +7,11 @@
       // We set parserOptions.project for the project to allow TypeScript to create the type-checker behind the scenes when we run linting
       "parserOptions": {
         "project": ["tsconfig.(app|spec).json"]
+        
+      
+        
       },
       "extends": [
-        "plugin:prettier/recommended",
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:@angular-eslint/recommended",
@@ -35,14 +37,15 @@
           }
         ],
         // This rule requires the TypeScript type checker to be present when it runs
-        "@typescript-eslint/await-thenable": "error"
+        "@typescript-eslint/await-thenable": "error",
+        "@typescript-eslint/no-explicit-any": 2
       }
     },
     {
       "files": ["*.html"],
-      "extends": ["plugin:@angular-eslint/template/recommended", "plugin:prettier/recommended"],
+      "extends": ["plugin:@angular-eslint/template/recommended"],
       "rules": {
-        "prettier/prettier": ["error", { "parser": "angular" }]
+        
       }
     }
   ]
