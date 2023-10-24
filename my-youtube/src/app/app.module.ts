@@ -9,6 +9,7 @@ import HeaderComponent from './header/header/header.component';
 import FiltersComponent from './header/filters/filters.component';
 import AuthorizationComponent from './header/authorization/authorization.component';
 import SortingComponent from './sorting/sorting/sorting.component';
+import { HomePageComponent } from './home/home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import SortingComponent from './sorting/sorting/sorting.component';
     FiltersComponent,
     AuthorizationComponent,
     SortingComponent,
+    HomePageComponent,
   ],
   imports: [
     BrowserModule,
