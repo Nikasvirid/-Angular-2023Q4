@@ -44,7 +44,7 @@ export interface ILocalized {
 
 export enum ILanguage {
   en = 'en-US',
-  ru = 'ru-RU'
+  ru = 'ru-RU',
 }
 
 export enum IType {
