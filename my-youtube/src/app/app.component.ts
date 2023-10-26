@@ -5,7 +5,6 @@ import { HomePageComponent } from './home/home-page/home-page.component';
 @Component({
   standalone: true,
   selector: 'app-root',
-  // templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 
   imports: [
