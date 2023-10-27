@@ -8,3 +8,15 @@ import { Component } from '@angular/core';
 export default class SearchItemComponent {
 
 }
+// // import { Component, Input } from '@angular/core';
+// import { IItem } from './search-item.model';
+
+// @Component({
+//   selector: 'app-search-item',
+//   templateUrl: './search-item.component.html',
+//   styleUrls: ['./search-item.component.scss'],
+// })
+// export class SearchItemComponent {
+//   @Input()
+//   public item!: IItem;
+// }

@@ -13,18 +13,18 @@ import { HomePageComponent } from './home/home-page/home-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
     SearchResultsComponent,
     SearchItemComponent,
     HeaderComponent,
     FiltersComponent,
     AuthorizationComponent,
     SortingComponent,
-    HomePageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HomePageComponent,
+    AppComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
