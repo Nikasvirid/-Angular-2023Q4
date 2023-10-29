@@ -9,13 +9,12 @@ import HeaderComponent from './header/header/header.component';
 import FiltersComponent from './header/filters/filters.component';
 import AuthorizationComponent from './header/authorization/authorization.component';
 import SortingComponent from './sorting/sorting/sorting.component';
-import { HomePageComponent } from './home/home-page/home-page.component';
 
 @NgModule({
   declarations: [
     SearchResultsComponent,
     SearchItemComponent,
-    HeaderComponent,
+    // HeaderComponent,
     FiltersComponent,
     AuthorizationComponent,
     SortingComponent,
@@ -23,7 +22,8 @@ import { HomePageComponent } from './home/home-page/home-page.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HomePageComponent,
+    // HomePageComponent,
+    HeaderComponent,
     AppComponent,
   ],
   providers: [],

@@ -1,27 +1,3 @@
-nav {
-    background-color: gray;
-    height: 100px;
-  }
-  
-  nav img {
-    width: 70px;
-    padding: 25px;
-  }
-  
-  nav ul {
-    float: inline-end;
-    list-style-type: none;
-  }
-  
-  ul li {
-    display: inline-block;
-    padding: 30px;
-    
-  }
-
-  li a {
-    text-decoration: none;
-    color: rgb(7, 78, 177);
-    font-size: 20px;
-    font-weight: 500;
-  }
+a {
+  text-decoration: none;
+}
