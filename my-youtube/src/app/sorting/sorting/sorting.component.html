@@ -1,1 +1,11 @@
-<p>sorting works!</p>
+<div class="sorting" [class.hidden]="!isVisible">
+  <div class="sorting-label">Sorting by:</div>
+  <div class="sorting-item" [class.active]="item.name === sortBy" (click)="onSort(item.name)" *ngFor="let item of labels">
+    {{item.label}}
+  </div>
+  <div class="sorting-item">
+    by word or sentence
+  </div>
+  <input class="sorting-item-input" aria-label="sorting" onChange(event) type="text" />
+</div>
+ 

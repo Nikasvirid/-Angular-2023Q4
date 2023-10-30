@@ -1,37 +1,38 @@
-import { Pipe, PipeTransform } from '@angular/core';
-import { BySort } from '../../header/filters/filters.model';
-import { IItem } from '';
+import { Pipe, PipeTransform } from "@angular/core";
+import { ISort, Direction } from "./sorting.component";
+import { IItem } from "src/app/search/search-item/search-item.model";
 
 @Pipe({
-  name: 'sorting',
-})
-export class SortingPipe implements PipeTransform {
-  transform(
-
-    items: IItem[],
-    bySort: string,
-    keySort?: string,
-  ): IItem[] {
-    if (!keySort) return items;
-
-    switch (bySort) {
-      case 'word': {
-        return items.filter((item) => item.snippet.title.toLowerCase()
-          .includes(keySort.toLowerCase()));
-      }
-      case 'date': {
-        items.sort(
-          (a, b) => new Date(b.snippet.publishedAt).getTime()
-            - new Date(a.snippet.publishedAt).getTime(),
-        );
-        return keySort === BySort.descending ? items.reverse() : items;
-      }
-      case 'views': {
-        items.sort((a, b) => +b.statistics.viewCount - +a.statistics.viewCount);
-        return keySort === BySort.descending ? items.reverse() : items;
-      }
-      default:
-        return items;
+    name: 'sort'
+  })
+  export class SortPipe implements PipeTransform {
+    transform(value: IItem[], params: ISort): IItem[] {
+      return value.sort(sortByField(params));
+    }
+  
+  }
+  
+  const sortByField = ({ sortBy, orderBy }: ISort) => {
+    if (sortBy === 'date') {
+      return sortByDate(orderBy);
+    } else if (sortBy === 'countOfViews') {
+      return sortByCountOfViews(orderBy);
     }
   }
+  
+  const sortByDate = (orderBy: string) => (a: any, b: any) => {//?any
+    const valA = new Date(path(['snippet', 'publishedAt'], a)).getTime();
+    const valB = new Date(path(['snippet', 'publishedAt'], b)).getTime();
+    return orderBy === Direction.DESC ? valA - valB : valB - valA;
+  };
+  
+  const sortByCountOfViews = (orderBy: string) => (a: any, b: any) => { //?any
+    const valA = Number(path(['statistics', 'viewCount'], a));
+    const valB = Number(path(['statistics', 'viewCount'], b));
+    return orderBy === Direction.DESC ? valA - valB : valB - valA;
+  };
+
+function path(arg0: string[], a: any): string | number | Date {
+    throw new Error("Function not implemented.");
 }
+  

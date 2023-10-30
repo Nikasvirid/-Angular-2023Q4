@@ -1,0 +1,6 @@
+<div class="item-list">
+    <app-item
+      *ngFor="let item of items| async | filters: sort.search | sort:sort"
+      [item] = "item">
+    </app-item>
+</div>

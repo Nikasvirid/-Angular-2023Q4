@@ -1,32 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-// import { HomePageComponent } from './home/home-page/home-page.component';
-import HeaderComponent from './header/header/header.component';
+import { RouterModule } from '@angular/router';//router ..a disparu))
+
 
 @Component({
-  standalone: true,
   selector: 'app-root',
-  styleUrls: ['./app.component.scss'],
-
-  imports: [
-    RouterModule,
-    HeaderComponent,
-  ],
-  template: `
-  <main>
-  <a [routerLink]="['/']">
-    <header class="brand-name">
-      <img class="brand-logo" src="/assets/1.jpg"width="50px" alt="myFoto" aria-hidden="true">
-    </header>
-  </a>
-  <section class="content">
-    <router-outlet></router-outlet>
-  </section>
-  <app-header></app-header>
-</main>
-`,
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
-
-export default class AppComponent {
-  title = 'my-youtubeHome';
+export class AppComponent {
+  title = 'youtube-clientHome';
 }
