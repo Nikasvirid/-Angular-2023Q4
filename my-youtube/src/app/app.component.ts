@@ -34,9 +34,12 @@ import { Component } from '@angular/core';
 import HeaderComponent from './header/header/header.component';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'my-app',
+  // templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
+  template: `<div>
+   <
+  </div>`
  
 })
 

@@ -1,29 +1,29 @@
-<div class="card-body">
-  <div class="card-body-thumbnail">
+<div class="item-body">
+  <div class="item-body-thumbnail">
     <img [src]="item?.snippet?.thumbnails?.default?.url" alt="card-foto"/>
   </div>
-  <div class="card-body-info">
-    <div class="card-body-info-item">
-      <img class="card-body-info__icon" src="../../../assets/viewed.svg" alt=""/>
+  <div class="item-body-info">
+    <div class="item-body-info-item">
+      <img class="item-body-info__icon" src="/assets/viewed.svg" alt=""/>
       <span class="card-body-info__value">{{item?.statistics?.viewCount}}</span>
     </div>
-    <div class="card-body-info-item">
-      <img class="card-body-info__icon" src="../../../assets/liked.svg" alt=""/>
-      <span class="card-body-info__value">{{item?.statistics?.likeCount}}</span>
+    <div class="item-body-info-item">
+      <img class="item-body-info__icon" src="/assets/liked.svg" alt=""/>
+      <span class="item-body-info__value">{{item?.statistics?.likeCount}}</span>
     </div>
-    <div class="card-body-info-item">
-      <img class="card-body-info__icon" src="../../../assets/dislike.svg" alt=""/>
-      <span class="card-body-info__value">{{item?.statistics?.dislikeCount}}</span>
+    <div class="item-body-info-item">
+      <img class="item-body-info__icon" src="/assets/dislike.svg" alt=""/>
+      <span class="item-body-info__value">{{item?.statistics?.dislikeCount}}</span>
     </div>
-    <div class="card-body-info-item">
-      <img class="card-body-info__icon" src="../../../assets/comments.svg" alt=""/>
-      <span class="card-body-info__value">{{item?.statistics?.commentCount}}</span>
+    <div class="item-body-info-item">
+      <img class="item-body-info__icon" src="/assets/comments.svg" alt=""/>
+      <span class="item-body-info__value">{{item?.statistics?.commentCount}}</span>
     </div>
   </div>
-    <div class="card-body-title">
+    <div class="item-body-title">
       {{item?.snippet?.title}}
     </div>
-    <div class="card-body-more">
+    <div class="item-body-more">
       more...
     </div>
   </div>

@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-details',
-  standalone: true,
-  imports: [CommonModule],
+  // standalone: true,
+  // imports: [CommonModule],
   template: `
     <p>
-      works bonjour!
+      show more show less
     </p>
   `,
   styleUrls: ['./details.component.scss'],
