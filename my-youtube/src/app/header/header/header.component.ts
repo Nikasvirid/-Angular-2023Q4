@@ -12,7 +12,7 @@ export default class HeaderComponent {
 
   constructor(private itemListService: ItemListService) { }
 
-  onToggleFiltersButton() {
+  onToggleFilters() {
     this.isSortingVisible = !this.isSortingVisible;
   }
 

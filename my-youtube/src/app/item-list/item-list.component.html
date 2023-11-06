@@ -2,5 +2,9 @@
     <app-item
       *ngFor="let item of items| async | filters: sort.search | sort:sort"
       [item] = "item">
+      {{ item.id}}
+      <p *ngIf="item.kind">
+        Description: {{ item.kind }}
+      </p>
     </app-item>
 </div>

@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { ItemListService } from 'src/app/item-list/item-list.service';
 
 export interface ISort {
@@ -21,11 +21,11 @@ export const defaultSort = {
 @Component({
   selector: 'app-sorting',
   templateUrl: './sorting.component.html',
-  styleUrls: ['./sorting.component.scss'],
+  styleUrls: ['./sorting.component.scss']
 })
-export  class SortingComponent implements OnInit{
+export class SortingComponent implements OnInit {
   @Input()
-  isVisible: boolean = false;
+  isVisible!: boolean;
   @Output() handleSortingChange = new EventEmitter<ISort>();
 
   sortBy: string;
@@ -43,7 +43,7 @@ export  class SortingComponent implements OnInit{
     }
   ];
 
-  constructor(private itemListService: ItemListService) {
+  constructor(private ItemListService: ItemListService) {
     const { sortBy, orderBy } = defaultSort;
     this.sortBy = sortBy;
     this.orderBy = orderBy;
@@ -60,13 +60,11 @@ export  class SortingComponent implements OnInit{
       this.sortBy = name;
       this.orderBy = Direction.DESC;
     }
-    this.itemListService.sort.next({ sortBy: this.sortBy, orderBy: this.orderBy, search: this.search });
+    this.ItemListService.sort.next({ sortBy: this.sortBy, orderBy: this.orderBy, search: this.search });
   }
 
   onChange(event: { target: { value: string; }; }) {
     this.search = event.target.value;
-    this.itemListService.sort.next({ sortBy: this.sortBy, orderBy: this.orderBy, search: this.search });
+    this.ItemListService.sort.next({ sortBy: this.sortBy, orderBy: this.orderBy, search: this.search });
   }
 }
-
-

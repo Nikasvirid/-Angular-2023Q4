@@ -1,118 +1,118 @@
-// .header {
-//     background-color: rgb(238, 238, 241);
-//     height: 120px;
-//     width: 100%;
-//   }
-
-
-//   .header-top-logo {
-//       display: flex;
-//       justify-content: center;
-//       .header-top-search {
-//         width: 350px;
-//         height: 30px;
-//         padding: 10px;
-//         margin-top: 20px;
-//         border: none;
-        
-//       }
-//   }
-
-//   .header-sortings {
-//     display: flex;
-//     margin-left: 300px;
-//   }
-
-//   a {
-//     padding: 10px;
-//     color:rgb(18, 143, 239)
-//   }
-
-//   .header-top-button {
-//     width: 80px;
-//     height: 30px;
-//     padding: 10px;
-//     margin-top: 20px;
-//     color: aliceblue;
-//     background-color: rgb(8, 160, 236);
-//     border: none;
-//     border-top-right-radius: 3px;
-//     cursor: pointer;
-//   }
-//    span {
-//     text-align: center;
-//     margin-bottom: 4px;
-//    }
-//    img {
-//     width: 50px;
-//     height: 50px;
-//     padding: 10px;
-//     border-radius: 20px;
-//     background-color: transparentize($color: #eaeced, $amount: 0);
-//   }
-  
-//   .filters {
-//     height: 30px;
-//     width: 20px;
-//     padding: 10px;
-//     margin-top: 10px;
-//     cursor: pointer;
-//   }
-
-//   .autoriz {
-//     margin-left: 260px;
-//     text-align: center;
-//     border: none;
-//   }
-
-//  .user {
-//   border-radius: 20px;
-//   background-color: transparent;
-//   width: 30px;
-//   height: 30px;
-//   padding: 10px;
-//   margin-top: 10px;
-//   cursor: pointer;
-// }
-
-// .bottom-search {
-//   border: none;
-//   margin-left: 10px;
-// }
-
-// .sorting {
-//   color: gray;
-//   text-decoration: none;
-// }
-// .word {
-//   text-decoration: none;
-// }
-
-//   nav ul {
-//     float: inline-end;
-//     list-style-type: none;
-//   }
-  
 .header {
-
-  &-top-panel {
-    background: #E5E5E5;
-    height: 80px;
+    background-color: rgb(238, 238, 241);
+    height: 120px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    z-index: 1;
-
-    & *:not(:last-child) {
-      margin-left: 10px;
-    }
   }
 
-  &-bottom-panel {
+
+  .header-top-logo {
+      display: flex;
+      justify-content: center;
+      .header-top-search {
+        width: 350px;
+        height: 30px;
+        padding: 10px;
+        margin-top: 20px;
+        border: none;
+        
+      }
+  }
+
+  .header-sortings {
+    display: flex;
+    margin-left: 300px;
+  }
+
+  a {
+    padding: 10px;
+    color:rgb(18, 143, 239)
+  }
+
+  .header-top-button {
+    width: 80px;
+    height: 30px;
+    padding: 10px;
+    margin-top: 20px;
     color: aliceblue;
     background-color: rgb(8, 160, 236);
     border: none;
+    border-top-right-radius: 3px;
+    cursor: pointer;
   }
+   span {
+    text-align: center;
+    margin-bottom: 4px;
+   }
+   img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: transparentize($color: #eaeced, $amount: 0);
+  }
+  
+  .filters {
+    height: 30px;
+    width: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .autoriz {
+    margin-left: 260px;
+    text-align: center;
+    border: none;
+  }
+
+ .user {
+  border-radius: 20px;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
 }
+
+.bottom-search {
+  border: none;
+  margin-left: 10px;
+}
+
+.sorting {
+  color: gray;
+  text-decoration: none;
+}
+.word {
+  text-decoration: none;
+}
+
+  nav ul {
+    float: inline-end;
+    list-style-type: none;
+  }
+  
+// .header {
+
+//   &-top-panel {
+//     background: #E5E5E5;
+//     height: 80px;
+//     width: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     flex-wrap: nowrap;
+//     z-index: 1;
+
+//     & *:not(:last-child) {
+//       margin-left: 10px;
+//     }
+//   }
+
+//   &-bottom-panel {
+//     color: aliceblue;
+//     background-color: rgb(8, 160, 236);
+//     border: none;
+//   }
+// }

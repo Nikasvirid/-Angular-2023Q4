@@ -4,9 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import AppRoutingModule from './app-routing.module';
 import { AppComponent } from './app.component';
 import SearchResultsComponent from './search/search-results/search-results.component';
-import SearchItemComponent from './search/search-item/search-item.component';
+import { SearchItemComponent }from './search/search-item/search-item.component';
 import HeaderComponent from './header/header/header.component';
-import FiltersComponent from './header/filters/filters.component';
+import { FiltersComponent } from './header/filters/filters.component';
 import AuthorizationComponent from './header/authorization/authorization.component';
 import { SortingComponent } from './sorting/sorting/sorting.component';
 import { ItemComponent }  from './item/item.component';
@@ -16,6 +16,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LogoComponent } from './header/logo/logo.component';
 import { SortPipe } from './sorting/sorting/sorting.pipe';
 import { FilterPipe } from './header/filters/filters.pipe';
+import { RouterModule } from '@angular/router';
+import { HomePageComponent } from './home/home-page/home-page.component';
+import { DetailsComponent } from './details/details.component';
+import { FormautorizationComponent } from './header/authorization/formautorization/formautorization.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +30,13 @@ import { FilterPipe } from './header/filters/filters.pipe';
     FiltersComponent,
     AuthorizationComponent,
     SortingComponent,
+    // HomePageComponent,
     LogoComponent,
     ItemComponent,
     ItemListComponent,
     SortPipe,
     FilterPipe,
+    FormautorizationComponent,
     
   ],
   imports: [
@@ -38,7 +44,8 @@ import { FilterPipe } from './header/filters/filters.pipe';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    CommonModule
+    CommonModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent],
