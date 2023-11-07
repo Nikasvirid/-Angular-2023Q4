@@ -38,7 +38,7 @@ import HeaderComponent from './header/header/header.component';
   // templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   template: `<div>
-   <
+   <p>bonj</p>
   </div>`
  
 })

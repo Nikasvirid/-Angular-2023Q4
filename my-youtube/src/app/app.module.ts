@@ -61,12 +61,14 @@ import { DetailsComponent } from './details/details.component';
 import  AutorizationComponent  from './header/authorization/authorization.component';
 import { AppComponent }   from './app.component';
 import { ErrorPageComponent }   from './errorPage/error-page/error-page.component';
+import { FormautorizationComponent } from './header/authorization/formautorization/formautorization.component';
+import { RoutingautorizationComponent } from './formautorization/routingautorization/routingautorization.component';
 
  
 const appRoutes: Routes =[
   { path: '', redirectTo: 'home', pathMatch: 'full'},
   { path: 'home', component: HomePageComponent},
-  { path: 'app-authorization', component: AutorizationComponent},
+  { path: 'app-formauthorization', component: FormautorizationComponent},
   { path: 'app-details', component: DetailsComponent },
   { path: '**', component: ErrorPageComponent}
 ];
