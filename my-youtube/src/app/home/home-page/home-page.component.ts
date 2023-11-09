@@ -4,7 +4,7 @@ import { IItem, ILanguage, ISnippet } from 'src/app/search/search-item/search-it
 
 @Component({
   selector: 'app-home',
-  // standalone: true,
+  standalone: true,
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss'],
 })
