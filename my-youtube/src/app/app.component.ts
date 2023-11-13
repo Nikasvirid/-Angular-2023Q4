@@ -44,6 +44,6 @@ import { HomePageComponent } from './home/home-page/home-page.component';
 // })
 
 
-export class AppComponent {
+export default class AppComponent {
   title = 'youtube-clientHome';
 }

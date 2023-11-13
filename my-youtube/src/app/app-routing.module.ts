@@ -5,10 +5,10 @@ import { HomePageComponent } from './home/home-page/home-page.component';
 import { ErrorPageComponent } from './errorPage/error-page/error-page.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: '', redirectTo: '/home', pathMatch: 'full'},
   { path: 'home', component: HomePageComponent },
   { path: 'login', component: FormautorizationComponent},
-  { path: '404', component: ErrorPageComponent}
+  { path: 'error', component: ErrorPageComponent}
 ];
 
 @NgModule({
