@@ -62,6 +62,8 @@ import  AutorizationComponent  from './header/authorization/authorization.compon
 import AppComponent from './app.component';
 import { ErrorPageComponent }   from './errorPage/error-page/error-page.component';
 import { FormautorizationComponent } from './header/authorization/formautorization/formautorization.component';
+import { AdminComponent } from './header/authorization/admin/admin.component';
+import { CreateNewCardComponent } from './header/authorization/admin/create-new-card/create-new-card.component';
 
  
 const appRoutes: Routes =[
@@ -74,7 +76,7 @@ const appRoutes: Routes =[
 
 @NgModule({
   imports:      [ BrowserModule, RouterModule.forRoot(appRoutes)],
-  declarations: [ AppComponent, HomePageComponent, AutorizationComponent, DetailsComponent,ErrorPageComponent],
+  declarations: [ AppComponent, HomePageComponent, AutorizationComponent, DetailsComponent,ErrorPageComponent, AdminComponent, CreateNewCardComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule {};

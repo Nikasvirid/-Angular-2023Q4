@@ -1,4 +1,4 @@
-import { Component, EventEmitter} from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter} from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 export interface IUser {
   name:string;
@@ -9,7 +9,8 @@ export interface IUser {
 @Component({
   selector: 'app-formautorization',
   templateUrl: './formautorization.component.html',
-  styleUrls: ['./formautorization.component.scss']
+  styleUrls: ['./formautorization.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FormautorizationComponent  {
 
